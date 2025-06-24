@@ -86,9 +86,11 @@ if keywords:
             st.markdown(f"- **{k['language']}** | ⏱️ {k['duration_hours']} Std.")
             st.markdown(f"- 👥 {k['target_group']}")
             st.markdown(f"- 🧭 Kategorie: {k['category']}")
-            st.markdown(f"- 📝 Beschreibung:
-
-{k['description']}")
+            st.markdown(f"### {k['title']}")
+            st.markdown(f"- **{k['language']}** | ⏱️ {k['duration_hours']} Std.")
+            st.markdown(f"- 👥 {k['target_group']}")
+            st.markdown(f"- 🧭 Kategorie: {k['category']}")
+            st.markdown(f"- 📝 Beschreibung:\n\n{k['description']}")
             st.markdown("---")
     else:
         st.warning(t["no_results"])
